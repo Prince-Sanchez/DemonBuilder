@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/emblema_one</item>
+        <item>@font/nosifer</item>
+        <item>@font/pattaya</item>
+        <item>@font/sonsie_one</item>
+        <item>@font/syncopate_bold</item>
+    </array>
+</resources>
