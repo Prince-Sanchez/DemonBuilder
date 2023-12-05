@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Get references to your buttons
         Button signUpButton = findViewById(R.id.button);
-        Button logInButton = findViewById(R.id.button2);
+        Button loginButton = findViewById(R.id.button2);
 
         // Set click listener for the Sign Up button
         signUpButton.setOnClickListener(new View.OnClickListener() {
@@ -34,10 +34,11 @@ public class MainActivity extends AppCompatActivity {
         });
 
         // Set click listener for the Log In button
-        logInButton.setOnClickListener(new View.OnClickListener() {
+        loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent loginIntent = new Intent(MainActivity.this, LoginActivity.class);
+                startActivity(loginIntent);
             }
         });
 
