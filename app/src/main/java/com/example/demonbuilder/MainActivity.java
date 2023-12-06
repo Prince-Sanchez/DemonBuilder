@@ -18,6 +18,13 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        // Check if the user is already logged in
+        if (DemonBuilderPreferences.isLoggedIn(this)) {
+            // User is logged in, navigate to LandingPage
+            startActivity(new Intent(this, LandingPageActivity.class));
+            finish(); // Close MainActivity to prevent going back to it with the back button
+        }
         setContentView(R.layout.activity_main);
 
         // Get references to your buttons
